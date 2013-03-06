@@ -1,36 +1,36 @@
-##   Ê¹ÓÃSSHµÇÂ½µ½GitHub
+	
+## ä½¿ç”¨SSHç™»é™†åˆ°GitHub
 	$ ssh -T git@github.com 
  
-## ²âÊÔgitÊÇ·ñÁªÏµ
+## æµ‹è¯•gitæ˜¯å¦è”ç³»
      $ ssh -Tv git@github.com
  
-## ¿ËÂ¡´úÂë¿â¡£
-	$ git clone git://github.com/gotgit/gotgit.git  Git-daemonĞ­Òé
+## å…‹éš†ä»£ç åº“ã€‚
+	$ git clone git://github.com/gotgit/gotgit.git  Git-daemonåè®®
 	$ git clone https://github.com/gotgit/gotgit.git
 	$ git clone git@github.com:huchao819/Helloworld.git
  
-## ¿ÕÏîÄ¿¿âÊ±£¬³õÊ¼»¯¼°Ìí¼ÓĞÂÎÄ¼ş·½Ê½Ò»
-    £º
-      1.  ÔÚGithubÏßÉÏ´´½¨Ò»¸ötest°æ±¾¿â
-       2.  ¿ËÂ¡°æ±¾¿âµ½±¾µØ
+## ä½¿ç”¨å…‹éš†åˆå§‹åŒ–é¡¹ç›®åº“
+   1.  åœ¨Githubçº¿ä¸Šåˆ›å»ºä¸€ä¸ªtestç‰ˆæœ¬åº“
+   2.  å…‹éš†ç‰ˆæœ¬åº“åˆ°æœ¬åœ°
      $ git clone git@github.com:huchao/test.git 
-   3. Ìá½»Êı¾İ
-            ÇĞ»»µ½±¾µÄgithub/testÄ¿Â¼ÏÂ£¬´´½¨README.mdÎÄ¼ş
+   3. æäº¤æ•°æ®
+     åˆ‡æ¢åˆ°æœ¬çš„github/testç›®å½•ä¸‹ï¼Œåˆ›å»ºREADME.mdæ–‡ä»¶
      $  git add README.md
      $  git commit -m "README  for this project"
-      4.  ÍÆËÍµ½Github°æ±¾¿â
-            $ git push origin master
+   4.  æ¨é€åˆ°Githubç‰ˆæœ¬åº“
+     $ git push origin master
 
-## ¿ÕÏîÄ¿¿âÊ±£¬³õÊ¼»¯¼°Ìí¼ÓĞÂÎÄ¼ş·½¶ş
-    1.  ÔÚGithubÏßÉÏ´´½¨Ò»¸ötest°æ±¾¿â
-    2.  ÔÚ±¾µØµÄGithubÄ¿Â¼ÏÂ´´½¨TestÄ¿Â¼
-      $ mkdir test
-      $ cd test
-      $ git init
-    3. ÔÚ°æ±¾¿âÖĞÌí¼ÓÊ¾ÀıÎÄ¼ş£¬ÈçREADME.MD
-      $ git add README.MD
-      $ git commit -m "README for this project."
-    4. Îª°æ±¾¿âÌí¼ÓoriginµÄÔ¶³Ì°æ±¾¿â¡£
-             $  git remote add origin git@github.com:huchao819/test.git
-    5.  Ö´ĞĞÍÆËÍÃüÁî£¬Íê³ÉGitHub°æ±¾¿âµÄ³õÊ¼»¯¡£×¢ÒâÃüÁîĞĞÖĞµÄ-u²ÎÊı£¬ÔÚÍÆËÍ³É¹¦ºó×Ô¶¯½¨Á¢±¾µØ·ÖÖ§ÓëÔ¶³Ì°æ±¾¿â·ÖÖ§µÄ×·×Ù¡£             
+ ## ä½¿ç”¨æœ¬åœ°æ¨é€çš„æ–¹å¼åˆå§‹åŒ–é¡¹ç›®åº“
+   1.  åœ¨Githubçº¿ä¸Šåˆ›å»ºä¸€ä¸ªtestç‰ˆæœ¬åº“
+   2.  åœ¨æœ¬åœ°çš„Githubç›®å½•ä¸‹åˆ›å»ºTestç›®å½•
+     $ mkdir test
+     $ cd test
+     $ git init
+   3. åœ¨ç‰ˆæœ¬åº“ä¸­æ·»åŠ ç¤ºä¾‹æ–‡ä»¶ï¼Œå¦‚README.MD
+     $ git add README.MD
+     $ git commit -m "README for this project."
+   4. ä¸ºç‰ˆæœ¬åº“æ·»åŠ originçš„è¿œç¨‹ç‰ˆæœ¬åº“ã€‚
+     $  git remote add origin git@github.com:huchao819/test.git
+   5.  æ‰§è¡Œæ¨é€å‘½ä»¤ï¼Œå®ŒæˆGitHubç‰ˆæœ¬åº“çš„åˆå§‹åŒ–ã€‚æ³¨æ„å‘½ä»¤è¡Œä¸­çš„-uå‚æ•°ï¼Œåœ¨æ¨é€æˆåŠŸåè‡ªåŠ¨å»ºç«‹æœ¬åœ°åˆ†æ”¯ä¸è¿œç¨‹ç‰ˆæœ¬åº“åˆ†æ”¯çš„è¿½è¸ªã€‚             
      $ git push -u origin master
