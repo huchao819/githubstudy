@@ -47,3 +47,30 @@
    5  执行推送命令，完成GitHub版本库的初始化。注意命令行中的-u参数，在推送成功后自动建立本地分支与远程版本库分支的追踪。
    
      $ git push -u origin master
+ 
+ ## 显示某个项目库的日志信息
+ 
+     $ git log --prety=fuller
+  eg: 
+  * commit 92dee9b8125afc9a606394ed463f9f264f2d3d58
+  * Author:     Jiang Xin <worldhello.net@gmail.com>
+  * AuthorDate: Wed Dec 14 14:52:40 2011 +0800
+  * Commit:     Jiang Xin <worldhello.net@gmail.com>
+  * CommitDate: Wed Dec 14 14:52:40 2011 +0800'
+ 
+## 重新设置用户名和邮箱地件变量
+
+    $ git config user.name "Jiang Xin"
+    $ git config user.email "gotgithub@gmail.com"
+    
+## 执行Git修补提交命令
+    
+    $ git commit --amend --rest-author -C HEAD
+    
+  其中参数 --rest-author会将提交信息中的属性Author连同AuthorDate一并修改，否则只修改Commit和CommitData.
+  参数-C HEAD 维持提交说明不变
+  
+## 直接强制推送到Github项目库
+    $ git push -f 
+ 
+   
