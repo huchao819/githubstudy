@@ -49,16 +49,17 @@
      $ git push -u origin master
      
  
- ##  显示某个项目库的日志信息
+ ## 显示某个项目库的日志信息
  
      $ git log --prety=fuller
+     
   eg: 
   * commit 92dee9b8125afc9a606394ed463f9f264f2d3d58
   * Author:     Jiang Xin <worldhello.net@gmail.com>
   * AuthorDate: Wed Dec 14 14:52:40 2011 +0800
   * Commit:     Jiang Xin <worldhello.net@gmail.com>
   * CommitDate: Wed Dec 14 14:52:40 2011 +0800'
-  * 
+ 
  
  ##  重新设置用户名和邮箱地件变量
 
