@@ -13,14 +13,19 @@
 ## 使用克隆初始化项目库
    1 在Github线上创建一个test版本库
    2 克隆版本库到本地
+   
       $ git clone git@github.com:huchao/test.git 
+      
    3 提交数据  切换到本的github/test目录下，创建README.md文件
+   
      $  git add README.md
      $  git commit -m "README  for this project"
+     
    4 推送到Github版本库
      $ git push origin master
 
  ## 使用本地推送的方式初始化项目库
+ 
    1 在Github线上创建一个test版本库
    2 在本地的Github目录下创建Test目录
      $ mkdir test
