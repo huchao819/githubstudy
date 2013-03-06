@@ -47,8 +47,9 @@
    5  执行推送命令，完成GitHub版本库的初始化。注意命令行中的-u参数，在推送成功后自动建立本地分支与远程版本库分支的追踪。
    
      $ git push -u origin master
+     
  
- ## 显示某个项目库的日志信息
+ ##  显示某个项目库的日志信息
  
      $ git log --prety=fuller
   eg: 
@@ -57,8 +58,9 @@
   * AuthorDate: Wed Dec 14 14:52:40 2011 +0800
   * Commit:     Jiang Xin <worldhello.net@gmail.com>
   * CommitDate: Wed Dec 14 14:52:40 2011 +0800'
+  * 
  
-## 重新设置用户名和邮箱地件变量
+ ##  重新设置用户名和邮箱地件变量
 
     $ git config user.name "Jiang Xin"
     $ git config user.email "gotgithub@gmail.com"
