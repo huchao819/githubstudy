@@ -136,5 +136,37 @@
     $ git push origin :mybranch1    
     
     
+里程碑管理
+===========
+
+ 里程碑和分支一样也是以引用式存在的，保存在.git/refs/tags/路径下。引用可能指向一个提交，但也可能是其他类型（Tag对象）。
+ 
+ * 轻量级里程碑：  git tag <tagname> [<commit>] 创建，引用直接指向一个提交对象<commit>
+ * 带说明的里程碑：git tag -a <tagname> [<commit>] 创建,并且在创建时需要提供说明。保存里程碑说明、指向、创建里程碑的用户信息。
+ * 带签名的里程碑：git tag -s <tagname> [<commit>] 创建，在说明的基础上引入了PGP签名
+
+## 创建里程碑命令
+    
+    $ git tag -m "Tag on inital commit" mytag1 HEAD^
+    $ git tag -m "Tag on new commit" mytag2
+    $ git tag mytag3
+    
+## 查看新建立的里程碑
+    
+    $ git tag -l -n1
+    
+## 将本地里程碑推送到GitHub远程版本库
+
+    $ git push origin refs/tags/*
+    
+## 删除里程碑
+    
+    $ git tag -d mytag3
+    $ git push origin :mytag3
+    
+    
+
+    
+    
  
    
