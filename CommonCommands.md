@@ -4,6 +4,9 @@
  
 ## 测试git是否联系
      $ ssh -Tv git@github.com
+
+## 创建一个空文件
+    $ touch hello1
  
 ## 克隆代码库。
     $ git clone git://github.com/gotgit/gotgit.git  Git-daemon协议
