@@ -77,5 +77,26 @@
   
 ## 直接强制推送到Github项目库
     $ git push -f 
+    
+
+新建分支
+===========
+  
+  Git的分支就是存储在.git/refs/heads/命令空间下的引用。引用文件的内容是该分支对应的ID。
+  当前版本库中默认分支master就对应于文件'.git/refs/heads/master'
+  
+## 创建新分支的方法 
+  * 在本地版本中创建新的分支（即引用）
+  * 然后使用推送命令将新的引用推送到GitHub版本库中
+
+## 本地版本库中建立新分支mybranch1
+   使用git branch命令。如果使用git checkout -b命令可以同是完成新分支的创建和切换。
+   
+    $ git checkout -b mybranch1
+
+## 将本地分支mybranch1推送到GitHub远程版本库中。
+
+    $ git push -u origin mybranch1
+  
  
    
