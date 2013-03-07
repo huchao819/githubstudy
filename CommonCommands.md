@@ -100,6 +100,41 @@
 ## 将本地分支mybranch1推送到GitHub远程版本库中。
 
     $ git push -u origin mybranch1
-  
+    
+## 显示当前版本库的分支
+   
+    $ git branch
+    $ git branch -r 显示分支情况
+    
+    origin/HEAD -> origin/mybranch1
+    origin/master
+    origin/mybranch1
+    
+## 显示远程版本库的目录结构
+    
+    $ git ls-remote
+    From git@github.com:gotgithub/helloworld.git
+    f46a28484adb6c1b4830eb4df582325c740e9d6c        HEAD
+    e1e52d99fa71fd6f606903efa9da04fd0055fca9        refs/heads/master
+    f46a28484adb6c1b4830eb4df582325c740e9d6c        refs/heads/mybranch1
+    
+ 可以看出HEAD和引用refs/heads/mybranch1的哈希值是一样的。
+ 
+## 切换当前分支
+   
+    $ git checkout master
+
+## 删除分支
+   不能删除当前所在的分支，需切换到其它分支后。 
+    
+    $ git branch -d mybranch1
+    
+    如果该分支还没有合并，则GitHub不允许删除，需用-D参数强制删除
+    $ git branch -D mybranch1
+    
+    推送命令，删除GitHub远程版本中无用的分支,分支前需要特殊引用表达式'冒号'
+    $ git push origin :mybranch1    
+    
+    
  
    
