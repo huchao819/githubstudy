@@ -25,8 +25,7 @@
    4 推送到Github版本库
      $ git push origin master
 
- ## 使用本地推送的方式初始化项目库
- 
+## 使用本地推送的方式初始化项目库 
    1 在Github线上创建一个test版本库
    
    2 在本地的Github目录下创建Test目录
@@ -48,8 +47,11 @@
    
      $ git push -u origin master
      
+     
+强制推送
+===========
  
- ## 显示某个项目库的日志信息
+## 显示某个项目库的日志信息
  
      $ git log --prety=fuller
      
@@ -61,7 +63,7 @@
   * CommitDate: Wed Dec 14 14:52:40 2011 +0800'
  
  
- ##  重新设置用户名和邮箱地件变量
+## 重新设置用户名和邮箱地件变量
 
     $ git config user.name "Jiang Xin"
     $ git config user.email "gotgithub@gmail.com"
