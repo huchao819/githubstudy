@@ -51,6 +51,13 @@
      $ git push -u origin master
      
      
+## 提交本地址库中所有修改的文件到远程版本库
+ 
+    $ git add -u
+    $ git commit -m "修改文件的注释"
+    $ git push
+     
+     
 强制推送
 ===========
  
