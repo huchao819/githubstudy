@@ -172,6 +172,15 @@
     $ git push origin :mytag3
     
     
+日志文件
+ 
+## 显示某个版本库的日志
+    
+    $ cd gotgit
+    $ git log --graph -3
+    
+    
+    
 
     
     
